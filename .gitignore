@@ -40,7 +40,7 @@ backend/notes/
 uv.lock
 
 # Personal docs
-*.txt
+/项目修改指导.txt
 
 # Claude
 .claude/
