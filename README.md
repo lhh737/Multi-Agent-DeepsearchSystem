@@ -1,6 +1,6 @@
-# Multi-Agent Deep Research System
-
 <div align="center">
+
+# Multi-Agent Deep Research System
 
 **基于 LangGraph 的多智能体深度研究系统 · 输入主题，自动产出结构化研究报告**
 
@@ -22,21 +22,21 @@
 
 <div align="center">
 
-**图1. 首页效果图**
-
 <img src="demo/demo1_首页效果图.png" alt="首页效果图" width="90%">
 
-&nbsp;
+*图1. 首页效果图*
 
-**图2. 子任务进程效果图**
+&nbsp;
 
 <img src="demo/demo3_子任务进程.png" alt="子任务进程效果图" width="90%">
 
+*图2. 子任务进程效果图*
+
 &nbsp;
 
-**图3. 研究报告效果图**
-
 <img src="demo/demo2_研究报告.png" alt="研究报告效果图" width="90%">
+
+*图3. 研究报告效果图*
 
 </div>
 
