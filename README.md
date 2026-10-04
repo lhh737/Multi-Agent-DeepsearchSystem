@@ -2,7 +2,8 @@
 
 # Multi-Agent Deep Research System
 
-**基于 LangGraph 的多智能体深度研究系统 — 输入主题，自动产出结构化研究报告**
+**基于 LangGraph 的多智能体深度研究系统 — 输入主题，自动产出结构化研究报告**  
+**A multi-agent deep research system — input a topic, get a structured research report**
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue)](https://www.python.org/)
 &nbsp;
@@ -18,11 +19,13 @@
 
 ---
 
-## 项目简介
+## Introduction | 项目简介
 
 输入一个研究主题，系统自动完成「任务拆解 → 多源搜索 → 分析总结 → 报告生成 → 质量评审 → 迭代优化」全流程。围绕 LangGraph 构建了 **Planner / Executor / Reporter / Critic** 四个专用 Agent，通过条件路由实现评分不足时自动补充检索与报告优化，最终输出一份结构严谨、来源可追溯的 Markdown 研究报告。
 
-## 效果展示
+Enter a research topic and the system runs the full pipeline — task decomposition, multi-source search, analysis, report drafting, quality review and iterative refinement. Four specialized agents (**Planner / Executor / Reporter / Critic**) are orchestrated with LangGraph; conditional edges trigger extra retrieval and report revision whenever the quality score falls below threshold, producing a structured, traceable Markdown report.
+
+## Demo | 效果展示
 
 <div align="center">
 
@@ -48,7 +51,7 @@
 
 </div>
 
-## 技术架构
+## Architecture | 技术架构
 
 <div align="center">
 
@@ -77,7 +80,7 @@
 
 </div>
 
-### Agent 职责
+### Agent Roles | Agent 职责
 
 | 阶段 | Agent | 核心职责 |
 |:---:|---|---|
@@ -86,7 +89,7 @@
 | **3** | **Reporter** | 整合所有子任务摘要，按六章模板输出结构化报告（执行摘要 → 核心发现 → 详细分析 → 对比洞察 → 风险建议 → 总结展望） |
 | **4** | **Critic** | 从完整性、准确性、结构、深度、可操作性五个维度评分（1~5），低于阈值时生成改进建议并触发下一轮迭代 |
 
-### 迭代优化
+### Iterative Refinement | 迭代优化
 
 <div align="center">
 
@@ -98,7 +101,7 @@
 
 </div>
 
-## 核心特性
+## Features | 核心特性
 
 | 特性 | 说明 |
 |---|---|
@@ -111,7 +114,7 @@
 | **全链路追踪** | LangSmith 集成（可选），填入 API Key 即可在控制台查看调用链、耗时、Token 消耗 |
 | **暗色模式** | 前端支持亮/暗切换，报告支持一键复制与 Markdown 下载 |
 
-## 技术栈
+## Tech Stack | 技术栈
 
 | 层级 | 技术选型 |
 |---|---|
@@ -125,7 +128,7 @@
 | 搜索 | Tavily Search API + DuckDuckGo |
 | 部署 | Docker Compose |
 
-## 快速开始
+## Quick Start | 快速开始
 
 ### 环境要求
 
@@ -191,7 +194,7 @@ npx vite --port 5174
 
 输入研究主题即可开始。
 
-## 项目结构
+## Project Structure | 项目结构
 
 ```
 Multi-Agent-DeepsearchSystem/
@@ -231,7 +234,7 @@ Multi-Agent-DeepsearchSystem/
 └── README.md
 ```
 
-## API 参考
+## API Reference | API 参考
 
 ### 端点
 
